@@ -1,0 +1,5 @@
+gcp_service_account_key/
+.terraform/
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
