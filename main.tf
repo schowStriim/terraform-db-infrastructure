@@ -13,20 +13,10 @@ resource "aws_db_instance" "aws_rds_postgres" {
   skip_final_snapshot  = true
   apply_immediately = true
   publicly_accessible = true
-  parameter_group_name = aws_db_parameter_group.aws_rds_postgres_parameter_group.name
+
 
 }
 
-resource "aws_db_parameter_group" "aws_rds_postgres_parameter_group" {
-  name   = var.aws_pg_parameter_group_name
-  family = var.aws_pg_parameter_group_family
-
-  parameter {
-    name  = var.aws_pg_parameter_settings_name
-    value = var.aws_pg_parameter_settings_value
-    apply_method = var.aws_pg_parameter_settings_apply_method
-  }
-}
 
 #######
 # GCP #

@@ -143,7 +143,7 @@ variable "azure_pg_admin_login_password" {
 
 variable "azure_pg_version" {
   type = string
-  default = "9.5"
+  default = "11"
 }
 
 
