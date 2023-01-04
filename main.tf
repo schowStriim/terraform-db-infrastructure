@@ -13,10 +13,7 @@ resource "aws_db_instance" "aws_rds_postgres" {
   skip_final_snapshot  = true
   apply_immediately = true
   publicly_accessible = true
-
-
 }
-
 
 #######
 # GCP #
